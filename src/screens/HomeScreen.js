@@ -12,7 +12,7 @@ const HomeScreen = ({ navigation }) => {
         }}>
             <NavBar navigation={navigation} />
             <GreetingBar />
-            <HeroBar />
+            <HeroBar navigation={navigation} />
         </View>
     )
 }
