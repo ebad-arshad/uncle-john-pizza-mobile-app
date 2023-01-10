@@ -2,9 +2,9 @@ import { Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { LinearGradient } from 'expo-linear-gradient';
 
-const CartBtn = ({ text, goTo, navigation }) => {
+const CartBtn = ({ text, goTo, navigation, disable }) => {
     return (
-        <TouchableOpacity onPress={() => navigation.navigate(goTo)}>
+        <TouchableOpacity disabled={disable} onPress={() => navigation.navigate(goTo)}>
             <LinearGradient
                 colors={['#F5313F', '#FFA360']}
                 start={{ x: 0, y: 0 }}

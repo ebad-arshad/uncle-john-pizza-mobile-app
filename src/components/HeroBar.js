@@ -25,13 +25,13 @@ const HeroBar = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <TouchableOpacity className='flex-1' activeOpacity={.6} onPress={() => navigation.navigate('ChooseSize')}>
+      <TouchableOpacity className='flex-1' activeOpacity={.6} onPress={() => navigation.push('ChooseSizeScreen')}>
         <View className='flex-1 w-[100%] items-center rounded-t-[20px] bg-white'>
           <View className='pt-[31px]'>
             <Text className='font-light text-[25px] text-[#F5313F] text-center'>Create your <Text className='font-bold'>own pizza</Text></Text>
             <Text className='font-bold text-[10px] color-[#6D6E9C] tracking-[1px] text-center'>THE COST WILL DEPEND ON YOUR CUSTOMIZATION</Text>
           </View >
-          <View className='mt-[-28px]'><Image source={createPizza} /></View>
+          <View className=''><Image source={createPizza} /></View>
         </View>
       </TouchableOpacity >
     </View >
